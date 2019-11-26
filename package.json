@@ -1,11 +1,11 @@
 {
-  "name": "express-nobots",
+  "name": "express-badbots",
   "version": "1.0.0",
   "description": "Keep Bots Away From Your Express App",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rajkumarpb/express-nobots"
+    "url": "git+https://github.com/rajkumarpb/expressnobots.git"
   },
   "keywords": [
     "node",
@@ -17,8 +17,17 @@
     "googlebot",
     "facebookexternalhit"
   ],
-  "author": "Rajkumar<pb.rajkumar@yahoo.com>",
+  "author": "Rajkumar <pb.rajkumar@yahoo.com>",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/rajkumarpb/express-nobots#readme",
-  "dependencies": {}
+  "homepage": "https://github.com/rajkumarpb/expressnobots#readme",
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/rajkumarpb/expressnobots/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
