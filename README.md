@@ -43,3 +43,14 @@ console.log(req.isBot);
 //true
 ...
 ```
+
+If you are going to use this package in web projects, need to allow crawlers to access the files.
+
+In that case need to disable the isApi option to false. By default, isApi option is set to true.
+```javascript
+var noBots = require('express-badbots');
+
+....
+
+app.use(noBots({isApi:false}));
+```

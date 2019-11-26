@@ -1,7 +1,7 @@
 {
   "name": "express-badbots",
-  "version": "1.0.2",
-  "description": "Keep Bots Away From Your Express App",
+  "version": "1.0.3",
+  "description": "Keep Bots Away From Your Express App!",
   "main": "index.js",
   "repository": {
     "type": "git",
