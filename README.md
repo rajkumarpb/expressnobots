@@ -54,3 +54,30 @@ var noBots = require('express-badbots');
 
 app.use(noBots({isApi:false}));
 ```
+
+Changes from : v2.0:
+---------------------
+# If you need to log attacks in DB, need to specify the required database details like below.
+
+
+```
+var noBots = require('express-badbots');
+
+// 1. To Block Bots
+const bot_config = {
+    dbHost:process.env.HOST,
+    dbDialect:process.env.DIALECT,
+    dbName:process.env.DATABASE,
+    dbUser:process.env.USERNAME,
+    dbPass:process.env.PASSWORD,
+    block:true,
+    tableName: tableName,
+    trackLocation: true
+};
+
+app.use(noBots(bot_config));
+```
+
+This plugin use sequelize for inserting log data in DB.
+
+# If you need to track the Location of Request, need to enable trackLocation property to true in bot_config (Refer above config)
